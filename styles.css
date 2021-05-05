@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(to right, #3a7bd5, #4ca1af);
+    color: white;
+    font-family: 'Lobster', cursive;
+    text-shadow: black 2px 2px;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+    
+}
+
+/* Nav bar */
+
+.navbar {
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:20px;
+    text-align:center;
+    font-size: 25px;
+    background-color: rgb(48, 48, 48);
+    
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a{
+    display:inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.navbar a:hover {
+    color:#753ad5;
+    transition: 0.5s;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+  display:flex;
+  margin: auto;
+  max-width: 100%;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Inter', sans-serif;
+}
+
+.welcome-section img {
+  border-radius: 10px;
+  border: 2px solid #753ad5;
+  max-width: 100%;
+}
+
+.welcome-section p{
+  margin-left: 20px;
+}
+
+.ryan {
+  font-family: 'lobster';
+  font-size: 45px;
+  color: #6decff;
+  text-shadow: 1px 1px black;
+}
+
+@media (max-width: 800px){
+  .welcome-section img {
+    display: none;
+  }
+}
+
+/* Games section */
+
+.games-container h2 {
+  font-family: 'lobster', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin-top: 35px;
+  padding-top: 30px;
+  display: block;
+  margin-left: 35px;
+  text-decoration: underline;
+  font-size: 32px;
+  
+  
+}
+
+.games {
+    margin-top: 2%;
+    display: grid;
+    grid-gap: 42px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 420px;
+    background-color: rgb(48, 48, 48);
+    padding: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-shadow: black 2px 2px;
+  
+  }
+
+  .games > div > a > img  {
+    width: 34vh;
+    height: 50vh;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .games img {
+    border-radius: 1px;
+    padding: 5px;
+    width: 100%;
+    border: 3px solid #6decff;
+  }
+
+  .description {
+    display: none;
+    position: absolute;
+  }
+
+  .games > div:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .games > div:hover .description {
+    display: block;
+    text-align: center;
+    transition: 1s;
+  }
+  
+  .games > div:hover img {
+    opacity: 0.7;
+    transition: 1s;
+  }
+
+  .games > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+  }
+
+  .games-container {
+    background-color: rgb(48, 48, 48)
+  }
+
+  /* Socials section */
+
+  #social {
+    height: 40vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'lobster';
+
+}
+
+#social h2{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#social p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+}
+
+#socials a {
+    margin: 0 10px;
+}
+
+#twitter {
+    font-size: 50px;
+    color: black;
+    
+}
+
+#twitter:hover {
+    color: #00acee;
+    transition: 0.5s;
+    font-size: 60px;
+}
+
+#facebook{
+    font-size: 50px;
+    color: black;
+}
+
+#facebook:hover{
+    color: #3b5998;
+    font-size: 60px;
+    transition: 0.5s;
+}
+
+#instagram {
+    font-size: 50px;
+    color: black;
+}
+
+#instagram:hover{
+    color: #8a3ab9;
+    font-size: 60px;
+    transition: 0.5s;
+}
+
+#github {
+    font-size: 50px;
+    color: black;
+}
+
+#github:hover {
+    color: #f34f29;
+    font-size: 60px;
+    transition: 0.5s;
+}
+
+/* Footer */
+
+footer {
+  color:rgb(173, 173, 173);
+  padding: 3px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  border-top: solid 0.5px rgb(173, 173, 173);
+  
+}
