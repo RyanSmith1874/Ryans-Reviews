@@ -76,6 +76,7 @@ header {
   border-radius: 10px;
   border: 2px solid #753ad5;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .welcome-section p{
